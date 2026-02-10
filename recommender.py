@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Loading datasets
-dataset_a_df = pd.read_csv('C:/Users/1ekat/Desktop/Thesis/04_Prototype/MRS/data/Dataset_A.csv', encoding = 'latin-1', delimiter=';')
-dataset_b_df = pd.read_csv('C:/Users/1ekat/Desktop/Thesis/04_Prototype/MRS/data/Dataset_B.csv', delimiter=';')
+dataset_a_df = pd.read_csv('YOUR_PATH/Dataset_A.csv', encoding = 'latin-1', delimiter=';')
+dataset_b_df = pd.read_csv('YOUR_PATH/Dataset_B.csv', delimiter=';')
 
 # Selecting audio features columns
 audio_features = ['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'valence', 'tempo']
