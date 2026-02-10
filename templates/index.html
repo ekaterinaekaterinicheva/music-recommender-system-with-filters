@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Recommender for Fairness & Diversity</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+</head>
+
+<body>
+  <div id="transbox">
+    <div id="MRS">
+      <header>
+        <h1>Music Recommender for Fairness & Diversity</h1>
+        <!-- <p id="description">This is a music recommender with user-controlled filters for fairness and diversity.</p> -->
+      </header>
+      <main>
+        <p id="description">Select the characteristics of the artists you would like to see in the
+          recommendations:</p>
+        <form id="recs-form">
+          <fieldset class="filter">
+            <legend></legend>
+            <label for="artist-popularity-score">Artist's popularity score:</label>
+            <select id="artist-popularity-score" name="artist-popularity">
+              <option value="100">≤ 100</option>
+              <option value="90">≤ 90</option>
+              <option value="80">≤ 80</option>
+              <option value="70">≤ 70</option>
+              <option value="60">≤ 60</option>
+              <option selected value="50">≤ 50</option>
+              <option value="40">≤ 40</option>
+              <option value="30">≤ 30</option>
+              <option value="20">≤ 20</option>
+              <option value="10">≤ 10</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="filter">
+            <legend>Adjust the artist's gender</legend>
+
+            <input type="radio" id="female" name="artist-gender" value="F" />
+            <label for="female">Female</label>
+
+            <input type="radio" id="male" name="artist-gender" value="M" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="gender-balance-option" name="artist-gender" value="gender-balance" />
+            <label for="gender-balance-option">Gender Balance</label>
+
+          </fieldset>
+
+          <fieldset class="filter">
+            <legend>Adjust the artist's region</legend>
+
+            <input type="checkbox" id="africa" name="artist-region" value="Africa" />
+            <label for="africa">Africa</label>
+
+            <input type="checkbox" id="asia" name="artist-region" value="Asia" />
+            <label for="asia">Asia</label>
+
+            <input type="checkbox" id="australia" name="artist-region" value="Australia" />
+            <label for="australia">Australia</label>
+
+            <input type="checkbox" id="europe" name="artist-region" value="Europe" />
+            <label for="europe">Europe</label>
+
+            <input type="checkbox" id="north-america" name="artist-region" value="North America" />
+            <label for="north-america">North America</label>
+
+            <input type="checkbox" id="south-america" name="artist-region" value="South America" />
+            <label for="south-america">South America</label>
+          </fieldset>
+
+          <div id="artist-track-input">
+            <div id="input-fav-track">
+              <label>Enter your favorite track</label>
+              <input id="input-track-title" type="text" placeholder="Bad Liar" required />
+            </div>
+
+            <div id="input-fav-artist">
+              <label>...and its artist</label>
+              <input id="input-artist" type="text" placeholder="Imagine Dragons" required />
+            </div>
+          </div>
+
+          <button type="submit">Get recommendations!</button>
+        </form>
+
+        <div id="results"></div>
+        <div id="message">
+          {% if message %}
+          <p>{{message}}</p>
+          {% endif %}
+        </div>
+      </main>
+      <script src="{{ url_for('static', filename = 'get_recommendations.js') }}"></script>
+      <!-- Clears the no matches message when the user starts interact with the input box-->
+      <script>
+        document.getElementById("input-track-title").addEventListener("input", function () {
+          document.getElementById("message").innerHTML = "";
+        });
+      </script>
+      <!-- Clears the no matches message when the user clicks on any checkbox/button-->
+      <script>
+        document.querySelector('select[name="artist-popularity"]').addEventListener("change", function () {
+          document.getElementById("message").innerHTML = "";
+        });
+
+        document.querySelectorAll('input[name="artist-gender"]').forEach(btn => {
+          btn.addEventListener("change", function () {
+            document.getElementById("message").innerHTML = "";
+          });
+        });
+
+        document.querySelectorAll('input[name="artist-region"]').forEach(cb => {
+          cb.addEventListener("change", function () {
+            document.getElementById("message").innerHTML = "";
+          });
+        });
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

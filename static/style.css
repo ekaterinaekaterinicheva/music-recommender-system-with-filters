@@ -1,0 +1,104 @@
+body {
+  background-image: url('/static/background_image.jpg');
+  font-family: sans-serif;
+  padding: 40px 40px;
+  color: #191726;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0px;
+}
+
+#description {
+  font-size: 17px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 30px 25px 10px 25px;
+} 
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+
+select {
+  width: 14%;
+  padding: 3px;
+  border: solid #593E2E 1px;
+  background-color: #B3B3B3;
+}
+
+#artist-track-input {
+margin: 10px 25px 20px 25px;
+font-size: 17px;
+}
+
+#input-fav-track, #input-fav-artist {
+display: inline;
+margin: 0;
+}
+
+input[type=text] {
+    font-size: 15px;
+    width: 24%;
+    padding: 3px;
+    margin: 2px 0px 2px 0px;
+    box-sizing: border-box;
+    border: solid #593E2E 1px;
+    background-color: #B3B3B3;
+    color: #191726;
+}
+
+input[type=radio] {
+  accent-color: #191726;
+}
+
+input[type=checkbox] {
+  accent-color: #191726;
+  /* border: solid #593E2E 1px; */
+}
+
+button {
+    border: solid #593E2E 1px;
+    font-size: 17px;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    background-color: #A66D03;
+    border-radius: 4px;
+}
+
+#MRS {
+  width: 100%;
+  background: rgba(139, 115, 89, 0.9);
+  padding: 40px 40px 1px 40px;
+  margin: auto;
+  max-width: 650px;
+}
+
+.filter {
+  border: none;
+    margin: 10px;
+    font-size: 17px;
+    border-bottom: solid #593E2E;
+}
+
+#results {
+text-align: center;
+font-size: 17px;
+margin: auto;
+/* margin: 20px; */
+}
+
+#message {
+font-size: 17px;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 30px;
+}
