@@ -30,8 +30,8 @@ Please download the following datasets and ensure they are saved in .csv format:
 Once downloaded, you need to link the datasets to the app. Open recommender.py and update the path strings in the following lines:
 ```
 #Loading datasets
-dataset_a_df = pd.read_csv('YOUR_PATH_TO_DATASET_A.csv', encoding='latin-1', delimiter=';')
-dataset_b_df = pd.read_csv('YOUR_PATH_TO_DATASET_B.csv', delimiter=';')
+dataset_a_df = pd.read_csv('YOUR_PATH_TO_Dataset_A.csv', encoding='latin-1', delimiter=';')
+dataset_b_df = pd.read_csv('YOUR_PATH_TO_Dataset_B.csv', delimiter=';')
 ```
 Please note that the latin-1 encoding and semi-colon (;) delimiters are required for these datasets to be parsed correctly due to the applied pre-processing.
 
