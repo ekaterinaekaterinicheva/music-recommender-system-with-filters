@@ -8,8 +8,15 @@ On the server side, the system looks up the song Help! by the Beatles in **Datas
 
 The filters the user selects are applied through simple if–else rules.
 
+## App Screenshots
+### App showing recommendations after user input and filter settings were applied
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/28cac049-31df-422a-8d76-e27049a0296a" />
+
+### App showing a message notifying that no songs matched the applied filters
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cb1ab34b-b243-4cb1-a386-f030999b59a0" />
+
 ## System Architecture
-<img width="909" height="566" alt="image" src="https://github.com/user-attachments/assets/69b16392-7365-4335-9d2f-87d633983ca2" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/69b16392-7365-4335-9d2f-87d633983ca2" />
 
 ## Data Setup
 This project requires two specific datasets. While these were originally public, they have been pre-processed to ensure audio feature vectors are formatted correctly for computing cosine similarity.
