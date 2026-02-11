@@ -58,7 +58,6 @@ input[type=radio] {
 
 input[type=checkbox] {
   accent-color: #191726;
-  /* border: solid #593E2E 1px; */
 }
 
 button {
@@ -93,7 +92,6 @@ button {
 text-align: center;
 font-size: 17px;
 margin: auto;
-/* margin: 20px; */
 }
 
 #message {
