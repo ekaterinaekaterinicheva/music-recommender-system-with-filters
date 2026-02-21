@@ -37,19 +37,28 @@ Since Dataset A is a large music catalogue, this created difficulties for users 
 
 ### New Features
 To address this usability limitation and improve the demo experience, the system was improved with two features:
-1. **Autocomplete Search**
+- **Autocomplete Search**
 Autocomplete dynamically suggests valid song–artist pairs from Dataset A as the user types, removing the need to manually browse the full music catalogue.
+
 The autocomplete **logic**:
-1) It queries Dataset A while the user types
-2) It returns unique song–artist pairs
-3) It automatically fills both fields when selected
+1. It queries Dataset A while the user types
+2. It returns unique song–artist pairs
+3. It automatically fills both fields when selected
    
-2. **"Try Demo Recommendation" Button**
+- **"Try Demo Recommendation" Button**
 The demo button automatically fills the input fields with Help! by the Beatles, selects certain filter configurations, and immediately generates recommendations, allowing users to explore the recommender’s functionality.
+
 The button allows users, especially **first-time users** to:
-1) See how the system works in seconds
-2) Observe filter behavior
-3) Evaluate ranking logic
+1. See how the system works in seconds
+2. Observe filter behavior
+3. Evaluate ranking logic
+
+## App Screenshots (Updated Version)
+### New Features Implemented in the Music Recommender App: Autocomplete Search and "Try Demo Recommendations" Button
+<img width="600" height="600" alt="Music_Recommender_App_New_Version" src="https://github.com/user-attachments/assets/7da6ca97-0dbf-4dc8-84c0-b4fa8d2e6d03" />
+
+### Autocomplete Search in Action
+<img width="600" height="600" alt="Music_Recommender_App_Autocomplete" src="https://github.com/user-attachments/assets/61908aae-6f53-4819-b052-41167e0dc359" />
 
 ### Impact of the Update
 - These improvements allowed the application to transition from a prototype into a production-ready interactive ML web application.
@@ -73,5 +82,8 @@ dataset_b_df = pd.read_csv('YOUR_PATH_TO_Dataset_B.csv', delimiter=';')
 Please note that the latin-1 encoding and semi-colon (;) delimiters are required for these datasets to be parsed correctly due to the applied pre-processing.
 
 3. Launch the Music Recommender App
-Click on 'Run Python File' (or run app.py) to let Flask to initialize and host the app on a local production server. Click on the generated URL and start exploring music recommendations, enjoying the balance of diversity and fairness while discovering new, unexpected songs and artists! :musical_note: :microphone:
+
+Click on 'Run Python File' (or run app.py) to let Flask to initialize and host the app on a local production server.
+
+Click on the generated URL and start exploring music recommendations, enjoying the balance of diversity and fairness while discovering new, unexpected songs and artists! :musical_note: :microphone:
 
