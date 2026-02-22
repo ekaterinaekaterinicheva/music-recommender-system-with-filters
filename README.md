@@ -1,5 +1,7 @@
 # Music Recommender System  With Filters For Fairness & Diversity
-This is a content-based music recommender system with user-controlled filters promoting fairness and diversity.
+This is a **content-based** music recommender system with user-controlled filters promoting **fairness** and **diversity**.
+
+Try [DEMO](https://music-recommender-system-with-filters.onrender.com/) on Render
 
 ## How Does It Work?
 Let’s assume a user wants to find songs that sound similar to “Help!” by The Beatles.
@@ -29,6 +31,11 @@ On the server side, the system performs the following steps:
 
 ## System Architecture
 <img width="600" height="600" alt="System_Architetcure" src="https://github.com/user-attachments/assets/8d0a6a77-b58d-4701-879c-e346e578bfa5" />
+
+## Deployment and Demo
+The application is **live** and can be tested here: https://music-recommender-system-with-filters.onrender.com/
+
+**Note:** This demo is hosted on Render using Free plan, which has limited RAM (512MB). Due to the large size of the datasets, the **application may occasionally hit memory limits** and restarts. For the most **stable experience**, run the app locally.
 
 ## Update: Autocomplete Search and “Try Demo Recommendation” Button
 **Why did the system require changes?**
@@ -84,7 +91,7 @@ Please download the following datasets and save them in .csv format:
     dataset_a_df = pd.read_csv(PATH_TO_YOUR_DATASET_A.csv)
     dataset_b_df = pd.read_csv(PATH_TO_YOUR_DATASET_B.csv)
   ```
-  - Replace PATH_TO_YOUR_DATASET_A.csv and PATH_TO_YOUR_DATASET_B.csv with the full file path on your computer.
+- Replace PATH_TO_YOUR_DATASET_A.csv and PATH_TO_YOUR_DATASET_B.csv with the full file path on your computer.
     
 3. Run the Appplication
    
