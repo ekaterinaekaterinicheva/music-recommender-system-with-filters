@@ -66,6 +66,9 @@ The system was enhanced with two major features:
 ### Autocomplete Search in Action
 <img width="600" height="600" alt="Music_Recommender_App_Autocomplete_in_Action" src="https://github.com/user-attachments/assets/31c4284a-03d6-4e57-8b36-d729586f1026" />
 
+### Recommendations (based on Beautiful by Mariah Carey) Suggested by the App
+<img width="600" height="600" alt="Music_Recommender_App_Suggested_Recommendations" src="https://github.com/user-attachments/assets/6bec44ce-7e4f-4802-850e-699df7559c84" />
+
 ## App Installation and Setup
 
 This project requires two datasets. While originally public, they were preprocessed to ensure audio feature vectors are correctly formatted for cosine similarity computation.
@@ -88,10 +91,15 @@ Please download the following datasets and save them in .csv format:
 
 - Find 
   ``` # Loading datasets
-    dataset_a_df = pd.read_csv(PATH_TO_YOUR_DATASET_A.csv)
-    dataset_b_df = pd.read_csv(PATH_TO_YOUR_DATASET_B.csv)
+      dataset_a_df = get_dataset(
+        local_path = 'C:/Users/.../data/Dataset_A.csv',
+        file_id ='1Akz2p3eXFY-FGYoRKJk-g_hP1cZ1Rz84', 
+        encoding='latin-1', 
+        delimiter=';'
+      )
   ```
-- Replace PATH_TO_YOUR_DATASET_A.csv and PATH_TO_YOUR_DATASET_B.csv with the full file path on your computer.
+
+- Paste the full file path to Dataset_A.csv and Dataset_B.csv on your computer.
     
 3. Run the Appplication
    
