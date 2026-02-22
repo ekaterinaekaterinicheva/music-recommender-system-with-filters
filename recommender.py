@@ -1,9 +1,37 @@
 import pandas as pd
+import gdown
+import os
 from sklearn.metrics.pairwise import cosine_similarity
 
+# Checking if we are on Render
+IS_PROD = os.getenv('RENDER') # Render sets this variable to 'true'
+
+def get_dataset(local_path, file_id, **kwargs):
+    if IS_PROD:
+    # Downloading datasets from Google Drive
+        file_name = os.path.basename(local_path)
+        if not os.path.exists(file_name):     
+            print(f"Downloading {file_name} from Google Drive...")
+            url = f'https://drive.google.com/uc?id={file_id}'
+            gdown.download(url, file_name, quiet=False)
+        return pd.read_csv(file_name, **kwargs)
+    else:
+        # If we are local, use the computer's path
+        return pd.read_csv(local_path, **kwargs)
+
 # Loading datasets
-dataset_a_df = pd.read_csv('PATH_TO_YOUR_DATASET_A.csv', encoding = 'latin-1', delimiter=';')
-dataset_b_df = pd.read_csv('PATH_TO_YOUR_DATASET_B.csv', delimiter=';')
+dataset_a_df = get_dataset(
+    local_path = 'C:/Users/1ekat/Desktop/Music_Recommender/data/Dataset_A.csv',
+    file_id ='1Akz2p3eXFY-FGYoRKJk-g_hP1cZ1Rz84', 
+    encoding='latin-1', 
+    delimiter=';'
+)
+
+dataset_b_df = get_dataset(
+    local_path = 'C:/Users/1ekat/Desktop/Music_Recommender/data/Dataset_B.csv',
+    file_id='1_YFcLwIcb9GcTre4NkB_sSo4U4vZlyEG', 
+    delimiter=';'
+)
 
 # Selecting audio features columns
 audio_features = ['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'valence', 'tempo']
