@@ -1,8 +1,6 @@
 # Music Recommender System  With Filters For Fairness & Diversity
 This is a **content-based** music recommender system with user-controlled filters promoting **fairness** and **diversity**.
 
-Try [DEMO](https://music-recommender-system-with-filters.onrender.com/) on Render
-
 ## How Does It Work?
 Let’s assume a user wants to find songs that sound similar to “Help!” by The Beatles.
 
@@ -24,18 +22,16 @@ On the server side, the system performs the following steps:
 
 ## App Screenshots (Original Version)
 ### App showing recommendations after manual user input and filter configurations were applied
-<img width="600" height="600" alt="App_Showing_Recs_After_Manual_User_Input" src="https://github.com/user-attachments/assets/8f2fc899-6d78-4bef-801e-defeda1a1b8c" />
+<img width="944" height="477" alt="App_Showing_Recommendations" src="https://github.com/user-attachments/assets/5c5845e6-a2bc-433d-8b9b-142a3c40b6a6" />
 
 ### App showing a message notifying that no songs matched the applied filters
-<img width="600" height="600" alt="App_Showing_A_No_Matches_Found_Message" src="https://github.com/user-attachments/assets/644eeefa-aece-417f-9a5f-1670daa98e91" />
+<img width="953" height="481" alt="App_Showing_No_Matches_Found" src="https://github.com/user-attachments/assets/8131b62c-e893-4d5c-89c6-d473db999a98" />
 
 ## System Architecture
-<img width="600" height="600" alt="System_Architetcure" src="https://github.com/user-attachments/assets/8d0a6a77-b58d-4701-879c-e346e578bfa5" />
+<img width="2013" height="1113" alt="MRS_Architecture" src="https://github.com/user-attachments/assets/d79ee697-3475-40a8-ac03-76b9bd0360b5" />
 
-## Deployment and Demo
-The application is **live** and can be tested here: https://music-recommender-system-with-filters.onrender.com/
-
-**Note:** This demo is hosted on Render using Free plan, which has limited RAM (512MB). Due to the large size of the datasets, the **application may occasionally hit memory limits** and restarts. For the most **stable experience**, run the app locally.
+## Deployment and Hosting
+This application was originally designed and hosted on Render using their Free Tier plan. While this provided a great entry point, the environment's limited RAM (512MB) proved insufficient for the app's processing needs. Because this project handles a large volume of data, the free cloud resources often lead to memory overflows. For the most **stable experience**, run the app locally.
 
 ## Update: Autocomplete Search and “Try Demo Recommendation” Button
 **Why did the system require changes?**
@@ -61,13 +57,16 @@ The system was enhanced with two major features:
 ## App Screenshots (Updated Version)
 
 ### App with new features: Autocomplete Search and "Try demo recommendations" button
-<img width="600" height="600" alt="Music_Recommender_App_New_Version" src="https://github.com/user-attachments/assets/d55d4aa1-2ced-4622-9b80-e003e63585d3" />
+<img width="1887" height="957" alt="Music_Recommender_App_New_Version" src="https://github.com/user-attachments/assets/5b27c18e-9118-4c11-b978-0886fd9688ae" />
 
 ### Autocomplete Search in Action
-<img width="600" height="600" alt="Music_Recommender_App_Autocomplete_in_Action" src="https://github.com/user-attachments/assets/31c4284a-03d6-4e57-8b36-d729586f1026" />
+<img width="1885" height="957" alt="Music_Recommender_App_Autocomplete" src="https://github.com/user-attachments/assets/a0e270a9-eee5-47ca-b67b-e25818e181c5" />
 
 ### Recommendations (based on Beautiful by Mariah Carey) Suggested by the App
-<img width="600" height="600" alt="Music_Recommender_App_Suggested_Recommendations" src="https://github.com/user-attachments/assets/6bec44ce-7e4f-4802-850e-699df7559c84" />
+<img width="1875" height="951" alt="Music_Recommender_App_New_Version_Suggested_Recommendations" src="https://github.com/user-attachments/assets/1474be7d-2977-4f3a-8df5-384b9d6b618c" />
+
+## Video Walkthrough
+To get a feel for the interface and core features without setting everything up immediately, you can watch a short video demonstration.
 
 ## App Installation and Setup
 
