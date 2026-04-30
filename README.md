@@ -66,7 +66,7 @@ The system was enhanced with two major features:
 <img width="1875" height="951" alt="Music_Recommender_App_New_Version_Suggested_Recommendations" src="https://github.com/user-attachments/assets/1474be7d-2977-4f3a-8df5-384b9d6b618c" />
 
 ## Video Walkthrough
-To get a feel for the interface and core features without setting everything up immediately, you can watch a short video demonstration.
+To get a feel for the interface and core features without setting everything up immediately, you can watch a short [video demonstration](https://drive.google.com/file/d/1qDwTwrSmxV7Bkvjxlf56fFfiCoozfscQ/view?usp=drive_link).
 
 ## App Installation and Setup
 
